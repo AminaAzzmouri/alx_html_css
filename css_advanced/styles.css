@@ -578,3 +578,57 @@ main > section:nth-child(3) > div > div p:last-child {
     display: block; /* Ensures margin applies */
     margin: 100px auto 0 auto; /* Adds top margin and centers it */
 }
+
+
+/* F.A.Q Section */
+.faq-section {
+  background: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 100%;
+  color: #071629;
+  margin-bottom: 80px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 40px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  text-align: left;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.faq-item h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #071629;
+  margin-bottom: 14px;
+}
+
+.faq-item p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(7, 22, 41, 0.5);
+}
+
+@media (max-width: 768px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
