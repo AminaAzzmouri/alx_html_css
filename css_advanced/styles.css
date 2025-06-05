@@ -82,13 +82,13 @@ header {
 
 .cta {
     display: block;
-    margin: 0 auto 100px auto; /* Reduced bottom margin for less space after the button */
+    margin: 0 auto;
     width: 162px;
     height: 44px;
     background-color: #C271FF;
     color: white;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;  /* ↓ reduced from 14px */
     border: none;
     border-radius: 22px;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
@@ -113,7 +113,7 @@ header {
 .hero > div:last-child > div {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 180px;
     flex-wrap: wrap;
     margin-top: 40px;
 }
@@ -145,7 +145,7 @@ header {
     opacity: 0.8;
 }
 
-/* Testimonial Section - UPDATED */
+/* Testimonial Section */
 main > section:nth-child(2) {
     width: 100vw;
     min-height: 392px;
@@ -345,6 +345,7 @@ main > section:nth-child(3) h2 {
 /* Highlight "popular" word */
 main > section:nth-child(3) h2 .highlight {
     font-weight: 700;
+    color: #C271FF;
 }
 
 /* Tutorials cards container */
@@ -506,4 +507,74 @@ main > section:nth-child(3) > div > div p:last-child {
         width: 100%;
         max-width: 300px;
     }
+}
+
+
+/* Free Membership Section */
+.free-membership {
+    width: 100vw;
+    background: rgba(7, 22, 41, 1);
+    padding: 70px 20px 60px;
+    text-align: center;
+    margin-left: calc(-50vw + 50%);
+}
+
+.free-membership h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.free-membership h2 .highlight {
+    color: #C271FF;
+    font-weight: 700;
+}
+
+.membership-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.benefit {
+    width: 257px;
+    height: 153px;
+    text-align: center;
+}
+
+.benefit img {
+    width: 43.67px;
+    height: 35.35px;
+    margin-bottom: 28px;
+}
+
+.benefit h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 13px;
+}
+
+.benefit p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+    width: 212px;       /* Fixed width based on Figma values */
+    margin: 0 auto;     /* Center the paragraph block */
+}
+
+/* Button reused from existing .cta class */
+.free-membership .cta {
+    display: block; /* Ensures margin applies */
+    margin: 100px auto 0 auto; /* Adds top margin and centers it */
 }
