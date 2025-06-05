@@ -53,6 +53,7 @@ header {
 .hero {
     text-align: center;
     padding-top: 140px;
+    padding-bottom: 111px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -144,6 +145,139 @@ header {
     opacity: 0.8;
 }
 
+/* Testimonial Section - UPDATED */
+main > section:nth-child(2) {
+    width: 100vw;
+    min-height: 392px;
+    background: #C271FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+    position: relative;
+    margin-left: calc(-50vw + 50%);
+}
+
+/* Testimonial content wrapper */
+main > section:nth-child(2) .testimonial-content {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Image container */
+main > section:nth-child(2) .testimonial-image {
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+}
+
+main > section:nth-child(2) .testimonial-image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Text content container */
+main > section:nth-child(2) .testimonial-text {
+    flex: 1;
+    max-width: 730px;
+}
+
+/* Blockquote styling */
+main > section:nth-child(2) .testimonial-text blockquote {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 33.6px;
+    color: white;
+    margin-bottom: 22px;
+    quotes: "«" "»";
+}
+
+main > section:nth-child(2) .testimonial-text blockquote::before {
+    content: open-quote;
+}
+
+main > section:nth-child(2) .testimonial-text blockquote::after {
+    content: close-quote;
+}
+
+/* Person name styling */
+main > section:nth-child(2) .testimonial-text h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33.6px;
+    color: white;
+    margin-bottom: 4px;
+}
+
+/* Job title styling */
+main > section:nth-child(2) .testimonial-text p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 33.6px;
+    color: white;
+}
+
+/* Fallback for old HTML structure (if you don't update HTML) */
+main > section:nth-child(2) {
+    gap: 120px;
+    justify-content: center;
+}
+
+main > section:nth-child(2) > div:first-child {
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+}
+
+main > section:nth-child(2) > div:first-child img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main > section:nth-child(2) > div:last-child {
+    flex: 1;
+    max-width: 730px;
+}
+
+main > section:nth-child(2) blockquote {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33.6px;
+    color: white;
+    margin-bottom: 22px;
+}
+
+main > section:nth-child(2) h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33.6px;
+    color: white;
+    margin-bottom: 4px;
+}
+
+main > section:nth-child(2) p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 33.6px;
+    color: white;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .hero h1 {
@@ -156,5 +290,220 @@ header {
     
     .navbar {
         padding: 20px 40px;
+    }
+    
+    main > section:nth-child(2) {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    main > section:nth-child(2) .testimonial-content,
+    main > section:nth-child(2) {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    main > section:nth-child(2) .testimonial-text blockquote,
+    main > section:nth-child(2) .testimonial-text h3,
+    main > section:nth-child(2) .testimonial-text p,
+    main > section:nth-child(2) blockquote,
+    main > section:nth-child(2) h3,
+    main > section:nth-child(2) p {
+        font-size: 18px;
+    }
+}
+
+
+/* Most Popular Tutorials Section */
+main > section:nth-child(3) {
+    width: 100vw;
+    background: white;
+    margin: 0;
+    margin-left: calc(-50vw + 50%);
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section title */
+main > section:nth-child(3) h2 {
+    width: 294px;
+    height: 40px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #071629;
+    margin-bottom: 90px;
+    margin-top: 60px;
+}
+
+/* Highlight "popular" word */
+main > section:nth-child(3) h2 .highlight {
+    font-weight: 700;
+}
+
+/* Tutorials cards container */
+main > section:nth-child(3) > div {
+    display: flex;
+    gap: 31px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1228px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Individual tutorial card */
+main > section:nth-child(3) > div > div {
+    width: 255px;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tutorial preview image */
+main > section:nth-child(3) > div > div img:first-child {
+    width: 255px;
+    height: 154px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Tutorial title */
+main > section:nth-child(3) > div > div h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #071629;
+    margin: 18px 13px 8px 13px;
+}
+
+/* Tutorial description */
+main > section:nth-child(3) > div > div p:not(:last-child) {
+    width: 242px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: rgba(7, 22, 41, 0.5);
+    margin: 0 13px 14px 13px;
+}
+
+/* Author info container */
+main > section:nth-child(3) > div > div > div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    margin: 0 13px 12px 13px;
+}
+
+/* Author avatar */
+main > section:nth-child(3) > div > div > div:nth-child(4) img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 13px;
+}
+
+/* Author name */
+main > section:nth-child(3) > div > div > div:nth-child(4) h4 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    color: #C271FF;
+    margin: 0;
+}
+
+/* Rating and duration container */
+main > section:nth-child(3) > div > div > div:nth-child(5) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 13px;
+    height: 27px;
+}
+
+/* Stars container */
+main > section:nth-child(3) > div > div > div:nth-child(5) > div {
+    display: flex;
+    gap: 8px;
+}
+
+/* Individual star */
+main > section:nth-child(3) > div > div > div:nth-child(5) > div > div {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Star icon styling */
+main > section:nth-child(3) > div > div > div:nth-child(5) > div > div i {
+    color: #C271FF;
+    font-size: 15px;
+}
+
+/* Duration text */
+main > section:nth-child(3) > div > div > div:nth-child(5) p,
+main > section:nth-child(3) > div > div p:last-child {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #C271FF;
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 1280px) {
+    main > section:nth-child(3) > div {
+        max-width: 95%;
+        padding: 0 40px;
+    }
+    
+    main > section:nth-child(3) > div {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    main > section:nth-child(3) {
+        padding: 40px 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    main > section:nth-child(3) h2 {
+        font-size: 28px;
+        width: auto;
+    }
+    
+    main > section:nth-child(3) > div {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    main > section:nth-child(3) > div > div {
+        width: 100%;
+        max-width: 300px;
     }
 }
