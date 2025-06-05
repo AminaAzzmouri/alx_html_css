@@ -1,0 +1,160 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    background-image: url("Images/background.png");
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+.logo {
+    width: 167.02px;
+    height: 29.46px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 52px;
+}
+
+.nav-links li a {
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    line-height: 100%;
+}
+
+/* Header styling */
+header {
+    position: relative;
+    z-index: 10;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding-top: 140px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero h1 {
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 100%;
+    margin: 0 auto 8px; /* Reduced margin to bring spans closer */
+}
+
+.tags {
+    margin-bottom: 40px; /* Reduced margin to bring button closer to spans */
+}
+
+.tags span {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 20px;
+    display: inline-block;
+    margin-bottom: 30px; /* Add space below spans */
+}
+
+.cta {
+    display: block;
+    margin: 0 auto 100px auto; /* Reduced bottom margin for less space after the button */
+    width: 162px;
+    height: 44px;
+    background-color: #C271FF;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* Learn from the pros section */
+.hero h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 240px 0 100px 0; /* Increased top margin to create more space from the button */
+    color: white;
+}
+
+/* Purple styling for "Learn" */
+.hero h2 .highlight {
+    color: #C271FF;
+    font-weight: 700;
+}
+
+/* Instructor cards container */
+.hero > div:last-child > div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Individual instructor cards */
+.hero > div:last-child > div > div {
+    text-align: center;
+    max-width: 150px;
+}
+
+.hero > div:last-child > div > div img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.hero > div:last-child > div > div h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.hero > div:last-child > div > div p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 60px;
+    }
+    
+    .hero > div:last-child > div {
+        gap: 20px;
+    }
+    
+    .navbar {
+        padding: 20px 40px;
+    }
+}
