@@ -14,9 +14,49 @@ main {
 article {
     flex: 2;
     overflow-y: auto;
+    background-color: #f0f8ff;  /* light blue background */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #333;
 }
 
 aside {
     flex: 1;
     overflow-y: auto;
+}
+
+article h1, article h2, article h3 {
+    color: #007acc; /* a nice blue for headings */
+    font-family: 'Yeseva One', cursive;
+}
+
+article p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+article table {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #007acc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+article table th, article table td {
+    border: 1px solid #007acc;
+    padding: 10px;
+    text-align: left;
+}
+
+article table th {
+    background-color: #007acc;
+    color: white;
+}
+
+article a img {
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
