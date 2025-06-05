@@ -632,3 +632,79 @@ main > section:nth-child(3) > div > div p:last-child {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Footer Section */
+.site-footer {
+  background: #071629;
+  height: 249px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; /* 👈 This pushes footer-copy to bottom */
+  height: 100%;                   /* 👈 Ensures full height is used */
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px; /* ⬅️ Adjust as needed */
+}
+
+.footer-logo {
+  width: 169px;
+  height: 30px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-socials i {
+  font-size: 18px;
+  color: #071629;
+  background: white;
+  border-radius: 50%;
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 14px;
+}
+
+.footer-copy {
+  margin-top: 40px; /* ⬅ spacing from top */
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  opacity: 0.35;
+  color: white;
+  text-align: center;
+
+  /* ⬇ center under content, not entire screen */
+  width: fit-content;
+  align-self: center;
+}
+
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
