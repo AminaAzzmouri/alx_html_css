@@ -379,6 +379,31 @@ main > section:nth-child(3) > div > div img:first-child {
     display: block;
 }
 
+/* Overlay the play button (PNG or SVG) centered on each tutorial preview image */
+.video-thumb {
+  position: relative;
+  width: 255px;
+  height: 154px;
+}
+
+.video-thumb img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px; /* Adjust size as needed */
+  height: 64px;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Let click pass through if needed */
+}
+
 /* Tutorial title */
 main > section:nth-child(3) > div > div h3 {
     font-family: "Source Sans Pro", sans-serif;
@@ -707,31 +732,4 @@ main > section:nth-child(3) > div > div p:last-child {
     flex-direction: column;
     gap: 20px;
   }
-}
-
-
-
-/* Overlay the play button (PNG or SVG) centered on each tutorial preview image */
-.video-thumb {
-  position: relative;
-  width: 255px;
-  height: 154px;
-}
-
-.video-thumb img:first-child {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 8px;
-}
-
-.play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 64px; /* Adjust size as needed */
-  height: 64px;
-  transform: translate(-50%, -50%);
-  pointer-events: none; /* Let click pass through if needed */
 }
