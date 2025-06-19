@@ -365,39 +365,27 @@ body {
     }
 }
 
-
 .our-results {
-  background: url('images/headphones_hero_2.jpg') no-repeat center top;
-  background-size: cover;
+  background-color: #071629; /* solid dark background */
   color: white;
-  height: 1000px;
-  padding: 180px 0 120px; /* ⬅️ more space on top */
+  padding: 60px 20px 80px;
   text-align: center;
 }
 
 .results-description {
   font-size: 16px;
-  font-weight: 400;
   max-width: 700px;
-  margin: 200px auto 100px;
-  line-height: 1.6;
-}
-
-
-.results-content {
-  padding-top: 60px; /* 👈 only shifts the text/content */
+  margin: 100px auto 60px;
+  line-height: 1.5;
 }
 
 .pentagon-grid {
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  gap: 150px;
-  justify-content: center; /* ⬅️ center-aligns grid items */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
   max-width: 1000px;
   margin: 0 auto;
 }
-
-
 
 .pentagon {
   background-color: #FF6565;
@@ -406,21 +394,132 @@ body {
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 15px;
   margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* optional for depth */
 }
 
-
 .pentagon .percent {
-  font-size: 36px;
+  font-size: 46px;
   font-weight: bold;
-  margin: 0;
+  margin-bottom: 5px;
 }
 
 .pentagon .label {
-  font-size: 13px;
-  font-weight: 400px;
-  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.contact-section {
+  background-color: #FFFFFF;
+  padding: 300px 0;
+  text-align: center;
+  margin-top: 40px; /* adds space before the form */
+}
+
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #071629;
+  background: transparent;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
+}
+
+/* Reuse .cta-button from earlier CSS (already styled) */
+
+.contact-submit {
+  margin-top: 50px; /* Add spacing only above this button */
+  display: block;   /* Keep it block for centering */
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;     /* Or whatever width matches your other buttons */
+}
+
+.footer {
+  background-color: #071629;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  width: 100vw;
+  padding-bottom: 40px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between; /* pushes logo left and icons right */
+  align-items: center;
+  margin: 0px auto;
+  padding: 100px 250px;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+  
+  
+}
+
+.footer-socials {
+  display: flex;
+  gap: 25px;
+}
+
+.social-link {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #FF6565;
+}
+
+.footer-bottom {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: rgb(95, 104, 117);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+}
+
+
+
+
+/* Override Holberton icon font size specifically for social icons */
+.social-link span[class^="holberton_school-icon-"],
+.social-link span[class*=" holberton_school-icon-"] {
+  font-size: 40px !important;
+  line-height: 1;
+  display: inline-block;
 }

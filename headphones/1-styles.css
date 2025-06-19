@@ -18,28 +18,16 @@ body {
 
 /* Header Styles */
 .header {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                url('Images/headphones_hero_1.jpg');
+    background: url('Images/headphones_hero_1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
+    height: 1000px;
     color: #FFFFFF;
     position: relative;
 }
 
 /* Navigation */
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background: transparent;
-    transition: all 0.3s ease;
-}
-
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -137,7 +125,7 @@ body {
 .hero h1 {
     font-size: 32px;
     font-weight: bold;
-    margin-top: 90px;
+    margin-top: 0px;
     margin-bottom: 5px;
     line-height: 1.2;
 }
@@ -152,7 +140,7 @@ body {
 }
 
 .cta-button {
-    display: inline-block;
+  display: inline-block;
     background: #FF6565;
     color: #FFFFFF;
     padding: 15px 30px;
@@ -164,8 +152,10 @@ body {
     text-transform: uppercase;
     transition: opacity 0.3s ease;
     cursor: pointer;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
+  
 }
+
 
 .cta-button:hover,
 .cta-button:active {
